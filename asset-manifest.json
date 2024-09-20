@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/YoussefMo-22/movies-app/static/css/main.37049021.css",
+    "main.js": "/YoussefMo-22/movies-app/static/js/main.fd8e0d44.js",
+    "static/media/fa-solid-900.ttf": "/YoussefMo-22/movies-app/static/media/fa-solid-900.07ed6d5fa32c1d54af0f.ttf",
+    "static/media/fa-brands-400.ttf": "/YoussefMo-22/movies-app/static/media/fa-brands-400.0ff70dcbf135d859ebf3.ttf",
+    "static/media/fa-solid-900.woff2": "/YoussefMo-22/movies-app/static/media/fa-solid-900.93f719f4d62bfa3e748c.woff2",
+    "static/media/fa-brands-400.woff2": "/YoussefMo-22/movies-app/static/media/fa-brands-400.bb8d5a145e22822103fb.woff2",
+    "static/media/fa-regular-400.ttf": "/YoussefMo-22/movies-app/static/media/fa-regular-400.17a6e1aebccdbaa39e78.ttf",
+    "static/media/fa-regular-400.woff2": "/YoussefMo-22/movies-app/static/media/fa-regular-400.bc3722686635b5f86132.woff2",
+    "static/media/fa-v4compatibility.ttf": "/YoussefMo-22/movies-app/static/media/fa-v4compatibility.0f6cb412603527bda691.ttf",
+    "static/media/fa-v4compatibility.woff2": "/YoussefMo-22/movies-app/static/media/fa-v4compatibility.6cfec8414be20e2c3426.woff2",
+    "index.html": "/YoussefMo-22/movies-app/index.html",
+    "main.37049021.css.map": "/YoussefMo-22/movies-app/static/css/main.37049021.css.map",
+    "main.fd8e0d44.js.map": "/YoussefMo-22/movies-app/static/js/main.fd8e0d44.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.37049021.css",
+    "static/js/main.fd8e0d44.js"
+  ]
+}
