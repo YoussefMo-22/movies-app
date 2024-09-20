@@ -1,0 +1,16 @@
+.title{
+    font-size: 28px;
+    font-weight: 500;
+}
+.titleHome{
+    color: rgb(13, 110, 253);
+}
+.brdr{
+    height: 1px;
+    background-color: rgb(61, 61, 61);
+    margin: 20px 0px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
