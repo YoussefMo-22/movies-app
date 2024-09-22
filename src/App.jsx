@@ -11,6 +11,9 @@ import Login from "./Pages/Login";
 import Register from "./Pages/Register";
 import { jwtDecode } from 'jwt-decode';
 import { useEffect, useState } from 'react';
+import DetailsMovie from './Pages/Details/DetailsMovie';
+import DetailsPerson from './Pages/Details/DetailsPerson';
+import DetailsTv from './Pages/Details/DetailsTv';
 
 
 function App() {
@@ -38,9 +41,7 @@ function App() {
     }
   }
   useEffect(()=>{
-    return(
-      localStorage.removeItem('Token_Value')
-    );
+    saveDataUser();
   },[])
   return (<>
     <Navbar userData={userData} logout={logout}/>
@@ -51,6 +52,9 @@ function App() {
         <Route path="movies" element={<ProtectedRoute><Movies /></ProtectedRoute>}/>
         <Route path="people" element={<ProtectedRoute><People /></ProtectedRoute>}/>
         <Route path="tv" element={<ProtectedRoute><Tv /></ProtectedRoute>}/>
+        <Route path="movie/:id" element={<ProtectedRoute><DetailsMovie /></ProtectedRoute>}/>
+        <Route path="person/:id" element={<ProtectedRoute><DetailsPerson /></ProtectedRoute>}/>
+        <Route path="tv/:id" element={<ProtectedRoute><DetailsTv /></ProtectedRoute>}/>
         <Route path="login" element={<Login saveDataUser={saveDataUser}/>}/>
         <Route path="register" element={<Register />}/>
         <Route path="*" element={<h1>404 - Not Found</h1>}/>
