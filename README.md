@@ -25,4 +25,4 @@ Mention the skills that this project highlights:
 - Version control with Git
 
 ## Live Demo
-[Click here to view the live demo](movies-app-eight-puce.vercel.app/)
+[Click here to view the live demo](https://movies-app-eight-puce.vercel.app/)
