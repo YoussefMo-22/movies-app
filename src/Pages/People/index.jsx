@@ -26,7 +26,7 @@ function People() {
         </div> : <Loading />}
         <nav aria-label="...">
   <ul className="pagination pagination-lg p-5 d-flex justify-content-center">
-    {numbers.map((num)=>(<li key={num} className="page-item" onClick={()=>{setPage(num)}}><a style={{cursor: 'pointer'}} className="page-link bg-transparent text-white">{num}</a></li>))}
+    {numbers.map((num)=>(<li key={num} className="page-item" onClick={()=>{setPage(num)}}><a style={{cursor: 'pointer'}} className="page-link bg-transparent text-dark">{num}</a></li>))}
   </ul>
 </nav>
     </>);
