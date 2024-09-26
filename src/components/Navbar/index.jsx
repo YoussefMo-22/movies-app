@@ -15,26 +15,26 @@ function Navbar({userData,logout}) {
                 <span className="navbar-toggler-icon"></span>
             </button>
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                {userData&&(<ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                     {navLinks.map((navLink)=>(
                         <NavLinkCom key={navLink.name} navLink={navLink}/>
                     ))}
-                </ul>)}
+                </ul>
                 <ul className="navbar-nav align-items-center ms-auto mb-2 mb-lg-0">
-                    {userData&&<li className="nav-item fs-6">
+                    <li className="nav-item fs-6">
                         <i className="me-2 fa-brands fa-facebook"></i>
                         <i className="me-2 fa-brands fa-twitter"></i>
                         <i className="me-2 fa-brands fa-instagram"></i>
                         <i className="me-2 fa-brands fa-spotify"></i>
-                    </li>}
-                    {userData==null && <>
+                    </li>
+                    <>
                         <li className="nav-item">
                             <Link className="nav-link active" aria-current="page" to='login'>Login</Link>
                         </li> 
                         <li className="nav-item">
                             <Link className="nav-link active" aria-current="page" to='register'>Register</Link>
                         </li>
-                    </>}
+                    </>
                     {userData&& <li className="nav-item btn text-decoration-none" onClick={logout}>Logout</li>}
                 </ul>
             </div>

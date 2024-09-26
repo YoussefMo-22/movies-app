@@ -47,14 +47,14 @@ function App() {
     <Navbar userData={userData} logout={logout}/>
     <div className="container my-5">
       <Routes>
-        <Route path="/" element={<ProtectedRoute><Home /></ProtectedRoute>} />
-        <Route path="home" element={<ProtectedRoute><Home /></ProtectedRoute>} />
-        <Route path="movies" element={<ProtectedRoute><Movies /></ProtectedRoute>}/>
-        <Route path="people" element={<ProtectedRoute><People /></ProtectedRoute>}/>
-        <Route path="tv" element={<ProtectedRoute><Tv /></ProtectedRoute>}/>
-        <Route path="movie/:id" element={<ProtectedRoute><DetailsMovie /></ProtectedRoute>}/>
-        <Route path="person/:id" element={<ProtectedRoute><DetailsPerson /></ProtectedRoute>}/>
-        <Route path="tv/:id" element={<ProtectedRoute><DetailsTv /></ProtectedRoute>}/>
+        <Route path="/" element={<Home />} />
+        <Route path="home" element={<Home />} />
+        <Route path="movies" element={<Movies />}/>
+        <Route path="people" element={<People />}/>
+        <Route path="tv" element={<Tv />}/>
+        <Route path="movie/:id" element={<DetailsMovie />}/>
+        <Route path="person/:id" element={<DetailsPerson />}/>
+        <Route path="tv/:id" element={<DetailsTv />}/>
         <Route path="login" element={<Login saveDataUser={saveDataUser}/>}/>
         <Route path="register" element={<Register />}/>
         <Route path="*" element={<h1>404 - Not Found</h1>}/>
