@@ -25,4 +25,4 @@ Mention the skills that this project highlights:
 - Version control with Git
 
 ## Live Demo
-[Click here to view the live demo](https://movies-app-pwel-7g03xs8xt-youssefmo-22s-projects.vercel.app)
+[Click here to view the live demo](https://movies-app-aomn.vercel.app/)
