@@ -23,12 +23,15 @@ function People() {
     return (<>
         {people != null ? <div className="row g-5">
             {Array.isArray(people) && people.length ? (people.map((person) => <PeopleCard key={person.id} person={person} />)) : <></>}
+            <div>
+                <nav aria-label="...">
+                    <ul className="pagination p-5 d-flex justify-content-center">
+                        {numbers.map((num) => (<li key={num} className="page-item" onClick={() => { setPage(num) }}><a style={{ cursor: 'pointer' }} className="page-link bg-transparent text-dark">{num}</a></li>))}
+                    </ul>
+                </nav>
+            </div>
         </div> : <Loading />}
-        <nav aria-label="...">
-  <ul className="pagination pagination-lg p-5 d-flex justify-content-center">
-    {numbers.map((num)=>(<li key={num} className="page-item" onClick={()=>{setPage(num)}}><a style={{cursor: 'pointer'}} className="page-link bg-transparent text-dark">{num}</a></li>))}
-  </ul>
-</nav>
+        
     </>);
 }
 
