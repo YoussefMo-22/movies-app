@@ -8,7 +8,7 @@ let navLinks = [
     {name: 'Tv', path: 'tv'},
 ];
 function Navbar({userData,logout}) {
-    return (<nav className="navbar navbar-expand-lg bg-transparent navbar-dark">
+    return (<nav className="navbar navbar-expand-lg bg-transparent navbar-white">
         <div className="container">
             <Link className="navbar-brand" to={'/'}>Noxe</Link>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,7 +35,7 @@ function Navbar({userData,logout}) {
                             <Link className="nav-link active" aria-current="page" to='register'>Register</Link>
                         </li>
                     </>}
-                    {userData&& <li className="nav-item btn text-decoration-none text-white" onClick={logout}>Logout</li>}
+                    {userData&& <li className="nav-item btn text-decoration-none" onClick={logout}>Logout</li>}
                 </ul>
             </div>
         </div>

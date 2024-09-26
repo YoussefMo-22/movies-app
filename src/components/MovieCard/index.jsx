@@ -8,7 +8,7 @@ export default function MovieCard({ movie }) {
             <Link to={`/movie/${movie.id}`}>
                 <div className="w-100">
                     <img className="w-100" src={imgPath(movie.poster_path)} alt="movie" />
-                    <h4 className="text-truncate" data-toggle="tooltip" data-placement="bottom" title={movie.title ? movie.title : movie.original_title}>{movie.title ? movie.title : movie.original_title}</h4>
+                    <h4 className="text-truncate text-black" data-toggle="tooltip" data-placement="bottom" title={movie.title ? movie.title : movie.original_title}>{movie.title ? movie.title : movie.original_title}</h4>
                 </div>
             </Link>
         </div>
