@@ -37,7 +37,7 @@ export default function DetailsMovie() {
                         <p><span className='fw-bold'>Production Companies:</span> {details?.production_companies.map((item,i)=>details?.production_companies[i].name).join(' , ')}</p>
                         <p><span className='fw-bold'>Release Date:</span> {details?.release_date}</p>
                         <p><span className='fw-bold'>Runtime:</span> {details?.runtime} Min</p>
-                        <p><span className='fw-bold'>Home Page:</span> <a href={details?.homepage}>{details?.homepage}</a></p>
+                        <p><span className='fw-bold'>Home Page:</span> <a style={{color:'black'}} href={details?.homepage}>{details?.homepage}</a></p>
                         <img className='w-75 my-2' src={imgPath(details?.backdrop_path)} alt='movie' />
                     </div>
                 </div> : <Loading />}

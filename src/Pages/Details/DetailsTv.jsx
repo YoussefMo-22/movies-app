@@ -39,7 +39,7 @@ export default function DetailsTv() {
                         <p><span className='fw-bold'>Last Air Date:</span> {details?.last_air_date}</p>
                         <p><span className='fw-bold'>Seasons:</span> {details?.number_of_seasons}</p>
                         <p><span className='fw-bold'>Episodes:</span> {details?.number_of_episodes}</p>
-                        <p><span className='fw-bold'>Home Page:</span> <a href={details?.homepage}>{details?.homepage}</a></p>
+                        <p><span className='fw-bold'>Home Page:</span> <a style={{color:'black'}} href={details?.homepage}>{details?.homepage}</a></p>
                         <img className='w-75 my-2' src={imgPath(details?.backdrop_path)} alt='movie' />
                     </div>
                 </div> : <Loading />}
